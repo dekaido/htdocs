@@ -42,14 +42,24 @@
 		  	<input name="Submit" type="submit" class="submit" value="Submit"><br>
 		</form>-->
 	<h2>Edit Profile</h2>
-	<center>
+
+	<div align="center">
 		<form action="Profile.php" method="post" class = "edit_profile">
 			<h3>First Name: </h3><input type="text" firstName="firstName" maxlength="20"><br>
 			<h3>Last Name: </h3><input type="text" lastName="lastName" maxlength="20"><br>
-			<h3>Student ID: </h3><input type="number" id="id" maxlength = "7" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
+			<h3>Student ID: </h3><input type="text" id="id" maxlength = "7" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
+			<h3>Interests</h3>
+				<div align="left">
+					<input type="checkbox" id="tag1" name="interest" value="tag1">
+					<label for="tag1">Engineering</label><br>
+					<input type="checkbox" id="tag2" name="interest" value="tag2">
+					<label for="tag2">Medicine</label><br>
+					<input type="checkbox" id="tag3" name="interest" value="tag3">
+					<label for="tag3">Physical Activity</label><br>
+				</div>
 			<input type="submit" class="submit">
 		</form>
-	</center>
+	</div>
 	</header>
 	<footer>
 	</footer>

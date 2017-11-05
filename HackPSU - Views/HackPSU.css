@@ -125,6 +125,14 @@ h2 {
 .interests{
 	list-style: decimal;
 }
+
+.edit_profile {
+ 	background: #f2f7ff;
+ 	width:25%;
+ 	padding:.5%;
+	padding-right:25px;
+ }
+
 .club_contact_info {
 	background:#f2f7ff;
 	margin-top:-15px;

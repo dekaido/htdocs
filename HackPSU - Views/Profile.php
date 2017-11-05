@@ -11,19 +11,21 @@
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
 </head>
+
+
 <?php
 
 $first = $_POST["firstName"];
 $last = $_POST["lastName"];
 $id = $_POST["id"];
-
+?>
 <div class="container"> 
   <!-- Navigation -->
 
 	<header>
 		<nav>
 		<div class = "logo">
-		  <img src="C:\Users\jason\OneDrive\Documents\HackPSU Images\psu_logo.png" alt="" width="200" class="psu"/>
+		  <img src="C:\xampp\htdocs\HackPSU Images\psu_logo.png" alt="" width="200" class="psu"/>
 	    </div>
 		  <h3 class="title">Student Organizations</h3>
 		<ul>
@@ -33,8 +35,8 @@ $id = $_POST["id"];
 	  	</nav>
 		<div class = "club_title">
 			<div class = "club_info">
-				<div class="club_name" id="club_name"><h1>$first $last</h1></div>
-<div class="club_header" id="club_contact"><h2>User Info</h2></div>
+				<?php echo $_POST["firstName"] . " " . $_POST["lastName"];?>
+<div class="club_header" id="info_header"><h2>User Info</h2></div>
 				<div class="club_contact_info"><ul class="user_info">
 					<li>Semester:</li>
 					<li>Credits:</li>
