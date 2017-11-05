@@ -10,37 +10,45 @@
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-
 </head>
-<body>
-<!-- Main Container -->
+<?php
+
+$first = $_POST["firstName"];
+$last = $_POST["lastName"];
+$id = $_POST["id"];
+
 <div class="container"> 
   <!-- Navigation -->
 
 	<header>
-	  <nav>
+		<nav>
 		<div class = "logo">
 		  <img src="C:\Users\jason\OneDrive\Documents\HackPSU Images\psu_logo.png" alt="" width="200" class="psu"/>
-		  </div>
+	    </div>
 		  <h3 class="title">Student Organizations</h3>
 		<ul>
 			<li><a href="Index">Home</a></li>
 			<li><a href="Profile">My Profile</a></li>
 		</ul>
-	  </nav>
-		<?php
-			$txt1 = "Learn PHP";
-			$txt2 = "W3Schools.com";
-			$x = 5;
-			$y = 4;
-
-			echo "<h2>" . $txt1 . "</h2>";
-			echo "Study PHP at " . $txt2 . "<br>";
-			echo $x + $y;
-		?>
-	</header>
-	<footer>
-	</footer>
+	  	</nav>
+		<div class = "club_title">
+			<div class = "club_info">
+				<div class="club_name" id="club_name"><h1>$first $last</h1></div>
+<div class="club_header" id="club_contact"><h2>User Info</h2></div>
+				<div class="club_contact_info"><ul class="user_info">
+					<li>Semester:</li>
+					<li>Credits:</li>
+					<li>GPA:</li>
+					<li>Major:</li>
+					<li>Interests</li>
+				  <ul class="interests">
+						<li>Science</li>
+						<li>Math</li>
+						<li>Technology</li>
+					</ul>
+			  </ul></div>
+			</div>
+		</div>
+  </header>
 </div>
-</body>
 </html>

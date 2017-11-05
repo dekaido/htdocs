@@ -36,17 +36,17 @@
 		<!--
 		<form action=" /action_page.php">
 			<h2>First Name</h2>
-				<input type="text" name="FirstName" value=""><br>
+				<input type="text" name="firstName" value=""><br>
 		  	<h2>Last Name</h2>
-				<input type="text" name="FirstName" value=""><br>
+				<input type="text" name="firstName" value=""><br>
 		  	<input name="Submit" type="submit" class="submit" value="Submit"><br>
 		</form>-->
 	<h2>Edit Profile</h2>
 	<center>
-		<form action="user.php" method="post" class = "edit_profile">
-			<h3>First Name: </h3><input type="text" firstName="firstname" maxlength="20"><br>
-			<h3>Last Name: </h3><input type="text" lastName="lastname" maxlength="20"><br>
-			<h3>Student ID: </h3><input type="text" id="id" maxlength = "7" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
+		<form action="Profile.php" method="post" class = "edit_profile">
+			<h3>First Name: </h3><input type="text" firstName="firstName" maxlength="20"><br>
+			<h3>Last Name: </h3><input type="text" lastName="lastName" maxlength="20"><br>
+			<h3>Student ID: </h3><input type="number" id="id" maxlength = "7" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
 			<input type="submit" class="submit">
 		</form>
 	</center>
