@@ -1,9 +1,10 @@
 <html>
   <?php
-    $conect = mysql_connect('orgs', 'root', '', 'localhost') or die("DB Connection failed");
-    $result = mysql_query($_GET["query"]);
+    $connect = mysqli_connect('localhost', 'root', '', 'orgs') or die("DB Connection failed");
+    //$result = mysqli_query($_GET["query"]);
+	$result = mysqli_query($connect,$_GET["query"]);
     $thing = "";
-    while($row = mysql_fetch_array($result, MYSQL_NUM)){
+    while($row = mysqli_fetch_array($result, MYSQL_NUM)){
          foreach($ros as $cname => $cvalue){
              $thing = $thing."\n".$cname." :\t".$cvalue;
          }

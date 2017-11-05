@@ -1,6 +1,16 @@
 <?php
+$server = "localhost";
+$username = "root";
+$password = "";
+$database = "orgs";
 
-$connect = mysqli_connect("localhost", "current_user()", "", "orgs");
+$connect = mysqli_connect($server,$username,$password,$database);
+
+if(mysqli_connect_error())
+{
+	die("Connection failed: " . mysqli_connect_error());	
+}
+echo "Connection successful";
 
 $cmd1 = "LOAD DATA INFILE 'StarfishStudentData.csv' INTO TABLE starfish
 		FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
@@ -17,8 +27,13 @@ $cmd2 = "LOAD DATA INFILE 'StarfishStudentData.csv' INTO TABLE starfish
 		@prior_term_gpa) set id=@person_party_id,major=@primary_major,
 		gpa=@prior_term_gpa,credits=@prior_total_credit_hours;";
 		
-$mysqli = mysqli_query($mysqli_connect,$cmd1);
+$cmd3 = "SELECT * FROM 'starfish'";
+
+$mysqli = mysqli_query($connect,$cmd1);
 if(!$mysqli)
-	echo mysqli_error($mysqli_connect);
-mysqli_close($mysqli_connect);
+	echo mysqli_error($connect);
+
+
+
+mysqli_close($connect);
 ?>
