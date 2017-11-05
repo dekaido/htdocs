@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Student Organizations</title>
+<title>My Profile</title>
 <link href="../HackPSU/HackPSU.css" rel="stylesheet" type="text/css">
 <link href="HackPSU.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
@@ -16,7 +16,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 <body>
 <!-- Main Container -->
@@ -24,22 +23,30 @@
   <!-- Navigation -->
 
 	<header>
-	  <nav>
+		<nav>
 		<div class = "logo">
 		  <img src="C:\Users\jason\OneDrive\Documents\HackPSU Images\psu_logo.png" alt="" width="200" class="psu"/>
-		  </div>
+	    </div>
 		  <h3 class="title">Student Organizations</h3>
 		<ul>
 			<li><a href="Index">Home</a></li>
 			<li><a href="Profile">My Profile</a></li>
 		</ul>
 	  </nav>
-		<div class = "search">
-		  <h4 class="container_header"><strong>Search</strong></h4>
-		</div>
-		<div class = "clubs">
-			<h4 class = "container_header">Organization</h4>
-		</div>
+		<!--
+		<form action=" /action_page.php">
+			<h2>First Name</h2>
+				<input type="text" name="FirstName" value=""><br>
+		  	<h2>Last Name</h2>
+				<input type="text" name="FirstName" value=""><br>
+		  	<input name="Submit" type="submit" class="submit" value="Submit"><br>
+		</form>-->
+	<form action="user.php" method="post">
+		<h2>First Name: </h2><input type="text" firstName="firstname" maxlength="20"><br>
+		<h2>Last Name: </h2><input type="text" lastName="lastname" maxlength="20"><br>
+		<h2>Student ID: </h2><input type="text" id="id" maxlength = "7" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
+		<input type="submit" class="submit">
+	</form>
 	</header>
 	<footer>
 	</footer>
