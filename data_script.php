@@ -42,6 +42,8 @@ $result4 = mysqli_query($connect, $cmd4);
 echo mysqli_num_rows($result4), " entries updated.<br>";
 if(mysqli_num_rows($result4) > 0)
 {
+	#echo "<table><tr><th>ID</th><th>MAJOR</th><th>GPA</th><th>CREDITS</th></tr>";
+	
 	while($row = mysqli_fetch_assoc($result4))
 	{
 		
