@@ -37,8 +37,9 @@ h2 {
 	color:white;
 	margin:10px;
 	float:left;
-	padding-top: 50px;
-	padding-left:50px;
+	margin-top: 70px;
+	margin-left:3%;
+	display:flex;
 }
 .logo {
 	color: #FFFFFF;
@@ -90,23 +91,56 @@ h2 {
 	margin-right: 2.5%;
 }
 
-.club_header {
-	padding-bottom:;
-	margin-left:2.5%;
-	width:40%;
-	float:left;
-	display:flex;
+.club_title {
 }
-.club_description {
-	padding: 1%;
-	margin-left: 2.5%;
-	margin-top:-15px;
-	float:left;
-	background:#f2f7ff;
+.club_info {
+	margin-left:.6%;
 	width:55%;
-	
+	height:inherit;
+	float:left;
 }
 
+.club_description {
+	padding: 1%;
+	max-height: inherit;
+	margin-left: 5%;
+	margin-top:-15px;
+	background:#f2f7ff;
+}
+
+.club_contact {
+	float:left;
+	margin-left:.6%;
+	width:40%;
+}
+.club_header {
+	margin-top:33px;
+	margin-left: -15px;
+}
+
+.club_contact_info {
+	background:#f2f7ff;
+	margin-top:-15px;
+	margin-left:2.5%;
+}
+
+.club_contact_info ul {
+	list-style:none;
+	margin-left:-30px;
+	font-weight: bold;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.club_search {
+	background: #f2f7ff;
+	float:left;
+	padding-left: 1.5%;
+	padding-right:1.5%;
+	margin-left: 3.45%;
+	line-height: 20px;
+	height:20%
+}
 .logo_text {
 	display:inline-block;
 	float: left
@@ -195,6 +229,10 @@ ul li:hover a {
 	display: inline-block;
 	background-color: #FFFFFF;
 	margin-top: 0px;
+}
+
+.tab {
+	margin-left: 40px;
 }
 /* Stats Gallery */
 .stats {
