@@ -33,11 +33,6 @@ h1 {
 h2 {
 	margin-left: 25px;
 }
-h3 {
-	margin-left: 25px;
-}
-
-
 .title {
 	color:white;
 	margin:10px;
@@ -96,13 +91,6 @@ h3 {
 	margin-right: 2.5%;
 }
 
-.edit_profile {
-	background: #f2f7ff;
-	width:25%;
-	padding:.5%;
-	padding-right:25px;
-}
-
 .club_title {
 }
 .club_info {
@@ -115,7 +103,6 @@ h3 {
 .club_description {
 	padding: 1%;
 	margin-left: 5%;
-	float:left;
 	margin-top:-15px;
 	background:#f2f7ff;
 }
@@ -125,21 +112,34 @@ h3 {
 	margin-left:.6%;
 	width:40%;
 }
-
-.club_header {
+.profile_header {
 	margin-top:33px;
 	margin-left: -15px;
 }
 
+.interest_header {
+	display:block;
+	background:#FF080C;
+}
+
+.interests{
+	list-style: decimal;
+}
 .club_contact_info {
 	background:#f2f7ff;
 	margin-top:-15px;
 	margin-left:2.5%;
-	width:45%;
-	float:left;
 }
 
 .club_contact_info ul {
+	list-style:none;
+	margin-left:-30px;
+	font-weight: bold;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+ 
+.profile_info {
 	list-style:none;
 	margin-left:-30px;
 	font-weight: bold;
@@ -156,15 +156,19 @@ h3 {
 	float:left;
 	padding-left: 1.5%;
 	padding-right:1.5%;
-	margin-left: 3.45%;
+	margin-left: -1.6%;
 	line-height: 20px;
-	height:20%
+	height:30%;
+	width:36%;
 }
 
 .club_exec {
 	background: #f2f7ff;
-	float:right;
-	padding-left:1.5%;
+	float:left;
+	margin: 3.4%;
+	padding-left: 2.5%;
+	margin-top: -5%;
+	width:49.5%;
 }
 
 .club_exec li {
