@@ -35,7 +35,7 @@ $id = $_POST["id"];
 	  	</nav>
 		<div class = "club_title">
 			<div class = "club_info">
-				<?php echo $_POST["firstName"] . " " . $_POST["lastName"];?>
+				<div class="club_name" id="user_name"><h1><?php echo $first . " " . $last;?></h1></div>
 <div class="club_header" id="info_header"><h2>User Info</h2></div>
 				<div class="club_contact_info"><ul class="user_info">
 					<li>Semester:</li>
