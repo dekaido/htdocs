@@ -1,0 +1,48 @@
+"“keys” (person_party_id, cms_user_ext_id, start_dt, and end_dt),  outcome – whether that student in the term defined by start_dt and end_dt was retained. "
+
+"We define “retained” as either A: being enrolled in a subsequent term that starts within 12 months of their previous term’s end date, or B: graduating that term."
+
+
+person_party_id: self-explanatory
+
+start_dt: Term Start Date
+end_dt: Term End Date
+"These two aren’t used as features themselves, but they’re used to calculate term length, time at institution, etc."
+
+"next_start_dt: The start date of the students next term at this school, if they have a subsequent term. Used to determine outcome."
+
+"program_start_date and program_end_date: The start and end dates of the student’s current program/major, if they’re in one. Used to calculate time in program, which is a feature that we didn’t use for this school but use sometimes."
+"program_exit_code: Used to determine outcome. If the program has an exit code of 1, they graduated (and should also have a program end date)."
+
+cms_user_ext_id: We just keep this around because we need it for the scores attributes files that we push back through the Starfish datapump to get them into the Starfish UI.
+
+final_term: Also used to determine outcome.
+
+
+
+"credential: Credential. The type of degree program that the student is in (BS, BA, etc.)"
+"term_length: Term Length. Sometimes an important feature, because summer and other shorter terms are different (have different types of students, number of credits taken, etc.), and the model has to be able to account for this. We don’t display this feature in the list of the top factors contributing to the student’s score that shows up in the student folder, because we only score current-term students, and the term length would be the same for every current student."
+prior_cum_credits_not_completed: Credits Attempted with W/F (all time)
+full_part_time: Full/Part Time
+term_attempted_credits: Attempted Credits in this term
+on_campus: On Campus
+delta_unmet_need: Change in Unmet Need (from last term). Unmet need meaning the amount of tuition that is not covered by financial assistance.
+unmet_need: Unmet Need
+prior_term_earned_credits: Earned Credits (last term)
+prior_total_credit_hours: Total (cumulative) Credit Hours (as of end of last term)
+high_school_gpa: High School GPA
+term_start_month: Term Start Month. Used for the same reason as term length.
+prior_term_start_month: Start Month of Previous Term
+prior_full_part_time: Full/Part Time Status (last term)
+primary_major: Primary Major
+prior_term_fraction_completed_credits: Fraction of Attempted Credits Completed (last term)
+transfer: Whether the student is a transfer student. This isn’t term or date-based – if they transferred into the school in 2011 we still count them as a transfer student in 2013.
+prior_term_gpa: GPA (last term)
+admitted_zip_code: Zip Code (when admitted)
+prior_cumulative_gpa: Cumulative GPA (as of last term)
+time_at_institution: Time at Institution
+
+
+
+prediction: Likelihood of retention (as defined above) as predicted by our model.
+"outcome: Whether the student was retained. (1=Yes, 0=No)"
