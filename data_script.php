@@ -12,7 +12,8 @@ if(mysqli_connect_error())
 }
 echo "Connection successful";
 
-$cmd1 = "LOAD DATA INFILE 'StarfishStudentData.csv' INTO TABLE starfish
+$cmd1 = "LOAD DATA INFILE 'StarfishStudentData.csv' 
+		REPLACE INTO TABLE starfish
 		FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
 		IGNORE 1 LINES
 		(@id,@dummy,@dummy,@dummy,@dummy,@dummy,@dummy,@dummy,
@@ -27,13 +28,13 @@ $cmd2 = "LOAD DATA INFILE 'StarfishStudentData.csv' INTO TABLE starfish
 		@prior_term_gpa) set id=@person_party_id,major=@primary_major,
 		gpa=@prior_term_gpa,credits=@prior_total_credit_hours;";
 		
-$cmd3 = "SELECT * FROM 'starfish'";
+$cmd3 = "SELECT * FROM starfish;";
 
 $mysqli = mysqli_query($connect,$cmd1);
-if(!$mysqli)
-	echo mysqli_error($connect);
+if(!$mysqli) echo mysqli_error($connect);
 
-
+$mysqli = mysqli_query($connect,$cmd3);
+if(!$mysqli) echo mysqli_error($connect);
 
 mysqli_close($connect);
 ?>

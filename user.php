@@ -1,9 +1,18 @@
 <html>
 <body>
+<?php
 
-Hi <?php echo $_POST["firstname" "lastname"]; ?><br>
-Student ID <?php echo $_POST["id"]; ?><br>
+$first = $_POST["firstName"];
+$last = $_GET["lastName"];
+$id = $_POST["id"];
 
+echo "Welcome" . $first . $last . "<br>";
+echo "Student ID " . $id . "<br>";
+
+
+
+
+?>
 
 </body>
 </html>
