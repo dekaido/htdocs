@@ -33,6 +33,11 @@ h1 {
 h2 {
 	margin-left: 25px;
 }
+h3 {
+	margin-left: 25px;
+}
+
+
 .title {
 	color:white;
 	margin:10px;
@@ -91,6 +96,13 @@ h2 {
 	margin-right: 2.5%;
 }
 
+.edit_profile {
+	background: #f2f7ff;
+	width:25%;
+	padding:.5%;
+	padding-right:25px;
+}
+
 .club_title {
 }
 .club_info {
@@ -102,8 +114,8 @@ h2 {
 
 .club_description {
 	padding: 1%;
-	max-height: inherit;
 	margin-left: 5%;
+	float:left;
 	margin-top:-15px;
 	background:#f2f7ff;
 }
@@ -113,6 +125,7 @@ h2 {
 	margin-left:.6%;
 	width:40%;
 }
+
 .club_header {
 	margin-top:33px;
 	margin-left: -15px;
@@ -122,6 +135,8 @@ h2 {
 	background:#f2f7ff;
 	margin-top:-15px;
 	margin-left:2.5%;
+	width:45%;
+	float:left;
 }
 
 .club_contact_info ul {
@@ -132,6 +147,10 @@ h2 {
 	padding-bottom: 5px;
 }
 
+.club_misc {
+	
+}
+
 .club_search {
 	background: #f2f7ff;
 	float:left;
@@ -140,6 +159,16 @@ h2 {
 	margin-left: 3.45%;
 	line-height: 20px;
 	height:20%
+}
+
+.club_exec {
+	background: #f2f7ff;
+	float:right;
+	padding-left:1.5%;
+}
+
+.club_exec li {
+	list-style: none;
 }
 .logo_text {
 	display:inline-block;

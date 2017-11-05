@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Profile</title>
+<title>Edit Profile</title>
 <link href="../HackPSU/HackPSU.css" rel="stylesheet" type="text/css">
 <link href="HackPSU.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
@@ -41,12 +41,15 @@
 				<input type="text" name="FirstName" value=""><br>
 		  	<input name="Submit" type="submit" class="submit" value="Submit"><br>
 		</form>-->
-	<form action="user.php" method="post">
-		<h2>First Name: </h2><input type="text" firstName="firstname" maxlength="20"><br>
-		<h2>Last Name: </h2><input type="text" lastName="lastname" maxlength="20"><br>
-		<h2>Student ID: </h2><input type="text" id="id" maxlength = "7" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
-		<input type="submit" class="submit">
-	</form>
+	<h2>Edit Profile</h2>
+	<center>
+		<form action="user.php" method="post" class = "edit_profile">
+			<h3>First Name: </h3><input type="text" firstName="firstname" maxlength="20"><br>
+			<h3>Last Name: </h3><input type="text" lastName="lastname" maxlength="20"><br>
+			<h3>Student ID: </h3><input type="text" id="id" maxlength = "7" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
+			<input type="submit" class="submit">
+		</form>
+	</center>
 	</header>
 	<footer>
 	</footer>
