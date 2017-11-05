@@ -3,11 +3,11 @@
 <?php
 
 $first = $_POST["firstName"];
-$last = $_GET["lastName"];
+$last = $_POST["lastName"];
 $id = $_POST["id"];
 
-echo "Welcome" . $first . $last . "<br>";
-echo "Student ID " . $id . "<br>";
+echo "Welcome " . $first . $last . ",<br><br>";
+echo "Student ID: " . $id . "<br>";
 
 
 
