@@ -29,8 +29,8 @@ $res1 = mysqli_query($connect,$cmd1);
 if(mysqli_num_rows($res1) > 0)
 {
 	$row = mysqli_fetch_assoc($res1);
-	$sem = mysqli_num_rows($res1)/2;
-	echo "Semester: " . ceil($sem) . " ";# . "<br>";
+	$sem = mysqli_num_rows($res1);
+	echo "Semester: " . ceil($sem) . "  ";# . "<br>";
 	vprintf("Major: %s  ",array($row["major"]));
 	vprintf("GPA: %.2f  ",array($row["gpa"]));
 	vprintf("Credits: %.2f  ",array($row["credits"]));

@@ -34,7 +34,7 @@ $cmd4 = "SELECT * FROM starfish;";
 $mysqli = mysqli_query($connect,$cmd1);
 if(!$mysqli) echo mysqli_error($connect);
 
-$mysqli = mysqli_query($connect,$cmd3);
+$mysqli = mysqli_query($connect,$cmd2);
 if(!$mysqli) echo mysqli_error($connect);
 
 #$result4 = $cmd4->query($cmd4);
