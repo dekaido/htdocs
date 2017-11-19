@@ -1,5 +1,5 @@
 # Stubs: "Penn State Student Clubs"
-#### Our project initiated at HackPSU: https://devpost.com/software/htdocs
+#### Our project initiated at HackPSU Fall 2017: https://devpost.com/software/htdocs
 
 ## Inspiration
 EdTech's challenge to make some aspect of education in people's lives easier and Hobson's challenge to use the Starfish database.
